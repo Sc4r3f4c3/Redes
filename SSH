@@ -1,1 +1,12 @@
-Configuracion SSH
+//Configuracion SSH
+hostname Router-1
+username cisco secret cisco
+ip domain-name www.cisco.com
+crypto key generate rsa 
+1024
+ip ssh version 2
+ip ssh authentication retry 2
+ip ssh time-out 60
+line vty 0 4
+transport input ssh
+login local
