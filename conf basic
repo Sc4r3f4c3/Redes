@@ -1,6 +1,13 @@
 Esta es la configuracion basica del dispositivo:
 
-ena
-conf ter
+enable
+configure terminal
+hostaname switch-sala2
+banner motd "solo personal autorizado"
+enable secret cisco
+line console 0
+password cisco
+login
+service password-encryption
 
 
